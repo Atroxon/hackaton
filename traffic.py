@@ -17,11 +17,11 @@ TEST_SIZE = 0.7
 def main():
 
     # Check command-line arguments
-    #if len(sys.argv) not in [2, 3]:
-        #sys.exit("Usage: python traffic.py data_directory [model.h5]")
+    if len(sys.argv) not in [2, 3]:
+        sys.exit("Usage: python traffic.py data_directory [model.h5]")
 
     # Get image arrays and labels for all image files
-    images, labels = load_data("database\\train")#sys.argv[1])
+    images, labels = load_data(sys.argv[1])
 
     # Split data into training and testing sets
     labels = tf.keras.utils.to_categorical(labels)

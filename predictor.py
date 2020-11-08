@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 #Total number of categories in your data
 NUM_CATEGORIES=2
 #Resize of your image
-IMG_WIDTH = 350
-IMG_HEIGHT = 350
+IMG_WIDTH = 400
+IMG_HEIGHT = 400
 #Identifier for your data i.e: if you want to give a more descriptive name 
 class_names = ['Tanque', 'Micro']
 #Test percentage to divide into train and validation
