@@ -7,8 +7,8 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 
 EPOCHS = 10
-IMG_WIDTH = 30
-IMG_HEIGHT = 30
+IMG_WIDTH = 400
+IMG_HEIGHT = 300
 NUM_CATEGORIES = 43
 TEST_SIZE = 0.4
 
@@ -18,7 +18,6 @@ def main():
     # Check command-line arguments
     if len(sys.argv) not in [2, 3]:
         sys.exit("Usage: python traffic.py data_directory [model.h5]")
-
     # Get image arrays and labels for all image files
     images, labels = load_data(sys.argv[1])
 
